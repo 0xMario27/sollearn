@@ -29,4 +29,24 @@ contract Errors {
         assert(num == 123);
         // code...
     }
+
+    function foo(uint256 _i) public {
+        num += 1;
+        // 当_i大于10时，就算已经执行了 num+=1，依旧会回滚状态。并且退还gas
+        require(_i < 10);
+    }
+
+    // 0.8.x新增的自定义错误
+    error MyError(address caller, uint256 i);
+
+    function testCustomError(uint256 _i) public view {
+        // 如果使用require提示很长的字符串的话，会消耗大量的gas
+        // require(_i < 10, "error error error error error error error ");
+
+        // 使用自定义错误节省gas
+        if (_i > 10) {
+            // msg.sender 是全局变量。所以需要使用view关键字
+            revert MyError(msg.sender, _i); // 使用revert触发自定义错误
+        }
+    }
 }
