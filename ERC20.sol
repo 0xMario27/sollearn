@@ -20,7 +20,6 @@ interface IERC20 {
         external
         returns (bool);
 
-    //
     function allowance(address owner, address spender)
         external
         view
