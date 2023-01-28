@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.10;
+pragma solidity ^0.8.0;
 
 // 事件
 // 一种记录当前智能合约运营状态的方法，但并不记录在状态变量中。

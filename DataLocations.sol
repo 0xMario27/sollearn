@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.10;
+pragma solidity ^0.8.0;
 
 // 数据的存储位置，可以是 storage, memory, calldata
 // 存储在storage上的是状态变量

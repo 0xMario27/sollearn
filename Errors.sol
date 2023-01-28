@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.10;
+pragma solidity ^0.8.0;
 
 // 报错的控制（异常控制）
 // 在智能合约中有常见的3种异常控制方法。

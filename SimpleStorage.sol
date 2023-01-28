@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.10;
+pragma solidity ^0.8.0;
 
 contract SimpleStorage {
     string public text; // 因为是公开可视，所以默认有读取方法

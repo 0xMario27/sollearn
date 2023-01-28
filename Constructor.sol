@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.10;
+pragma solidity ^0.8.0;
 
 // 构造函数
-// 仅能在合约部署的时候被调用一次，之后就再也不能被调用了
+// 仅能在合约`部署`的时候被调用一次，之后就再也不能被调用了
 // 一般用于初始化一些变量的操作
 contract Constructor {
     address public owner;

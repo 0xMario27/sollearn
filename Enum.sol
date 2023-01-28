@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.10;
+pragma solidity ^0.8.0;
 
 // 枚举
 // 布尔值只有两种状态，当我们想要使用多种状态的时候可以使用枚举

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.10;
+pragma solidity ^0.8.0;
 
 // 变量有三种类型：
 // 状态变量：相当于一个数据写入到了区块链里，只要不写修改的方法。数据将永久保存在链上。

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.10;
+pragma solidity ^0.8.0;
 
 contract DefaultValues {
     // 状态变量和局部变量。都有默认值。

@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.10;
+pragma solidity ^0.8.0;
 
 // 计数器的智能合约。可以对状态变量的增加和减少的操作。
 
@@ -13,7 +13,8 @@ contract Counter {
     // 只能通过外部读取。
     function inc() external {
         // 因为这个函数是写入方法，所以不能有view或pure的关键词。
-        // view和pure的关键词是给读用的。
+        // view 会读取状态变量。但不写状态变量。
+        // pure 对状态变量不读不写，只有局部变量操作。
         count += 1;
     }
 

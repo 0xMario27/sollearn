@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.10;
+pragma solidity ^0.8.0;
 
 /*
 角色控制合约。
@@ -15,7 +15,7 @@ contract AccessControl {
 
     mapping(bytes32 => mapping(address => bool)) public roles;
     // 角色名称的定义
-    //之所以使用hash而不是字符串是因为bytes32的gas比字符串小。
+    // 之所以使用hash而不是字符串是因为bytes32的gas比字符串小。
     bytes32 private constant ADMIN = keccak256(abi.encodePacked("ADMIN"));
     bytes32 private constant USER = keccak256(abi.encodePacked("USER"));
 

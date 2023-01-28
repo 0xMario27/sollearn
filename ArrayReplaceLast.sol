@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.10;
+pragma solidity ^0.8.0;
 
 // 如果不需要严格保证原数组的元素顺序。那么可以采用替换的形式来处理数组元素删除的操作。
 

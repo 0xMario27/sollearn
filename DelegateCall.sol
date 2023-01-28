@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.10;
+pragma solidity ^0.8.0;
 
 /*
 委托调用: B 是被委托人。充当委托人。
@@ -23,6 +23,7 @@ A ----> B ----> C
 
 委托调用的情况下，C合约是不能保存主币的值的。值在B中保存。
 也就是说C的状态变量并不能全部都更新的。而且也不能修改。
+官方说明：在代理模式中使用的含义delegatecall是代理合约读取和写入其存储并执行存储在逻辑合约中的逻辑，就像调用内部函数一样。
 */
 contract TestDelegateCall {
     uint256 public num;

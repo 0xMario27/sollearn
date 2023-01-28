@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.10;
+pragma solidity ^0.8.0;
 
 // 数组是可以遍历元素的
 // 映射是可以直接找到对应的地址对应的值的

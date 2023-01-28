@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.10;
+pragma solidity ^0.8.0;
 
 // 常量的意义。可以减少gas的消耗。
 // 在正常的读取方法中，是不消耗gas的。
